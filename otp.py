@@ -14,7 +14,7 @@ LENGTH = 6
 def generate_otp(LENGTH):
     return ''.join(random.choice(string.digits) for _ in range(LENGTH))
 
-def semd_otp_mail(sender, sender_password, receiver, otp):
+def send_otp_mail(sender, sender_password, receiver, otp):
     # Create the email content
     subject = "Your OTP Code"
     message = f"Your OTP code is: {otp}"
@@ -45,4 +45,4 @@ def semd_otp_mail(sender, sender_password, receiver, otp):
 
 # Generate OTP
 otp = generate_otp(LENGTH)
-semd_otp_mail(sender_email,sender_password, recipient_email, otp)
+send_otp_mail(sender_email,sender_password, recipient_email, otp)
