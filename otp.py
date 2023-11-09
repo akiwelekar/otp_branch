@@ -6,7 +6,7 @@ from email.mime.multipart import MIMEMultipart
 
 # Email configuration
 sender_email = "akiwelekar@gmail.com"
-sender_password = "pxue ssll qagm chhu"
+sender_password = SENDER_PASSWORD
 recipient_email = "awk@dbatu.ac.in"
 LENGTH = 6
 
